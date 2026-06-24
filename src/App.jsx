@@ -1,10 +1,16 @@
-import ProductCard from "./ProductCard";
+import User from "./User";
 function App(){
+  const user = {
+  name:"Ajeet",
+
+ };
+ const {name} = user;
   return(
-   <>
-   <ProductCard name="Laptop" price={50000}/>
-   <ProductCard name="Mobile" price={25000}/>
-   </>
+ <>
+ <User user={user}
+
+ />
+ </>
   )
 }
 export default App;

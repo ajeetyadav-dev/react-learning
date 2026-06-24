@@ -1,7 +1,11 @@
-function User(props){
+function User({user}){
     return(
-        <h1>{props.user.name}
+        <>
+        <h1>{user.name}
             </h1>
+           
+        </>
+        
     )
 }
 export default User;

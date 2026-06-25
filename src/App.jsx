@@ -1,16 +1,13 @@
-import User from "./User";
+
 function App(){
-  const user = {
-  name:"Ajeet",
-
- };
- const {name} = user;
+  function submit(e){
+    e.preventDefault();
+    alert("Form Submitted");
+  }
   return(
- <>
- <User user={user}
-
- />
- </>
+    <form onSubmit={submit}> 
+<button>Submit</button>
+    </form>
   )
 }
 export default App;

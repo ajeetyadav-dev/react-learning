@@ -1,13 +1,20 @@
-
+import { useState } from "react";
 function App(){
-  function submit(e){
-    e.preventDefault();
-    alert("Form Submitted");
-  }
-  return(
-    <form onSubmit={submit}> 
-<button>Submit</button>
-    </form>
-  )
+ const [fruits,setFruits] = useState(["Apple","Mango"]);
+ return(
+  <>
+
+   <ul>
+    {fruits.map((fruit,i)=>(
+        <li key={i}>{fruit}</li>
+      
+    ))}
+   </ul>
+  </>
+   
+ 
+  
+
+ );
 }
 export default App;
